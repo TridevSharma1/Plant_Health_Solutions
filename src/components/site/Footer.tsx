@@ -215,6 +215,24 @@ export function Footer() {
       <div className="border-t border-[#234b2b] bg-[#142d19]">
         <div className="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-5 text-xs text-[#a9bca5] sm:px-8 md:flex-row md:items-center md:justify-between">
           <p>© {new Date().getFullYear()} {s.name || "Plant Health Solutions Pvt. Ltd."}. All rights reserved.</p>
+
+          <div className="flex items-center gap-1.5">
+            <span>Designed &amp; developed by</span>
+            <a
+              href="https://www.sosyncaitech.in/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-1.5 font-medium text-white transition-colors hover:text-[#52c41a]"
+              title="SOSync AI Tech"
+            >
+              <img
+                src="/sosync-icon.png"
+                alt="SOSync AI Tech Logo"
+                className="h-5 w-auto object-contain transition-transform hover:scale-110"
+              />
+              <span className="hover:underline">SOSync AI Tech</span>
+            </a>
+          </div>
           <div className="flex flex-wrap gap-4 sm:gap-6">
             <Link href="/privacy-policy" className="transition-colors hover:text-white">
               Privacy Policy
